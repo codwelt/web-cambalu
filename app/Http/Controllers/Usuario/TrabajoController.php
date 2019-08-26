@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Usuario;
 
+use App\Materia;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -15,7 +16,11 @@ class TrabajoController extends Controller
 
     public function create()
     {
-        return view('usuario.trabajo.create');
+        $materias = Materia::all();
+
+        return view('usuario.trabajo.create',[
+            'materias' => $materias
+        ]);
 
     }
 

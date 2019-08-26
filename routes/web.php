@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $trabajos = \App\Trabajo::all();
+    return view('welcome',[
+        'trabajos' => $trabajos
+    ]);
 });
 
 Auth::routes();

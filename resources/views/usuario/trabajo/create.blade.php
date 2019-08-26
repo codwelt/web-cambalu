@@ -18,13 +18,12 @@
                                 <small id="emailHelp" class="form-text text-muted">Una descripcion muy general de lo que contiene el trabajo con palabras clave</small>
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlSelect1">Materia</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                <label for="materiasSelect">Materia</label>
+                                <select class="form-control" id="materiasSelect">
+                                    <option></option>
+                                    @foreach($materias as $materia)
+                                        <option value="{{$materia->id}}">{{$materia->nombre}}</option>
+                                    @endforeach
                                 </select>
                                 <small id="emailHelp" class="form-text text-muted">No esta la materia? <a href="#" class="badge badge-info">Crear Materia</a></small>
                             </div>

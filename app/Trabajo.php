@@ -14,6 +14,11 @@ class Trabajo extends Model
         return $this->belongsTo(Materia::class,"id_materia","id");
     }
 
+    public function autor()
+    {
+        return $this->belongsTo(User::class,"id_user","id");
+    }
+
 
 
 }
