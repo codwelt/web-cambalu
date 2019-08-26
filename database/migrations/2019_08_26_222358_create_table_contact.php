@@ -19,7 +19,7 @@ class CreateTableContact extends Migration
             $table->string("nombre");
             $table->string("correo");
             $table->integer('id_trabajo')->unsigned();
-            $table->foreign('id_tabajo')->references('id')->on('trabajos');
+            $table->foreign('id_trabajo')->references('id')->on('trabajos');
             $table->timestamps();
         });
     }
