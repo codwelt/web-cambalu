@@ -34,7 +34,7 @@
         <h3 class="mb-5">
             <em>Comparte, compra, vende, haz trueques y camabalaches de trabajos Universitarios. </em>
         </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Explorar</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger"  href="{{route('garden')}}">Explorar</a>
     </div>
     <div class="overlay"></div>
 </header>
