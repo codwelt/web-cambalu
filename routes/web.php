@@ -39,3 +39,12 @@ Route::post('/materias',[
     'uses' =>'Usuario\MateriaController@store',
     'as' => 'materias.store'
 ]);
+
+Route::get('/contact/{trabajo}',[
+    'uses' => 'ContactController@create',
+    'as' => 'contact.create'
+]);
+Route::post('/contact',[
+    'uses' => 'ContactController@store',
+    'as' => 'contact.store'
+]);

@@ -11,6 +11,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{$trabajo->titulo}}</h5>
                             <p class="card-text">{{$trabajo->descripcion}}</p>
+                            <a href="{{route('contact.create',['trabajo' => $trabajo->id])}}" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Contactar</a>
                         </div>
                         <div class="card-footer">
                             <a href="#" class="badge badge-warning">{{$trabajo->materia->nombre}}</a>

@@ -17,4 +17,5 @@ class WelcomeController extends Controller
             'trabajos' => $trabajos
         ]);
     }
+
 }
