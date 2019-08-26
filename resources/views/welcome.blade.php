@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container-fluid">
+    <div class="container">
         <div class="card-deck">
             @foreach($trabajos as $trabajo)
                 <div class="card">
