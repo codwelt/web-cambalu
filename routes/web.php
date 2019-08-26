@@ -18,3 +18,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/crear',[
+    'uses' =>'Usuario\TrabajoController@create',
+    'as' => 'trabajo.create'
+]);
+
+Route::post('/store',[
+    'uses' =>'Usuario\TrabajoController@store',
+    'as' => 'trabajo.store'
+]);
