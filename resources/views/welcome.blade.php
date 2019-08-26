@@ -29,6 +29,7 @@
 <!-- Header -->
 <header class="masthead d-flex">
     <div class="container text-center my-auto">
+        <img src="{{asset('img/logo2.png')}}" alt="">
         <h1 class="mb-1">Camabalú</h1>
         <h3 class="mb-5">
             <em>Comparte, compra, vende, haz trueques y camabalaches de trabajos Universitarios. </em>
