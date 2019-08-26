@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Usuario;
 use App\Materia;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class TrabajoController extends Controller
 {
@@ -27,6 +28,14 @@ class TrabajoController extends Controller
 
     public function store(Request $request)
     {
+
+        Auth::user()->trabajos()->create([
+           'titulo' => $request->get('titulo'),
+           'descripcion' => $request->get('descripcion'),
+           'id_materia' => $request->get('materia')
+        ]);
+
+        return redirect()->back();
 
     }
 }
