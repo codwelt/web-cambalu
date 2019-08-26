@@ -72,7 +72,6 @@
             $("#btnSubmitMateria").click(function(e){
 
 
-
                 var datoEnvio =   $("#modalCrearMateria").find("input[name='nombreMateria']").val();
 
                 $.ajax({
@@ -95,7 +94,8 @@
 
                         $("#modalCrearMateria").find(".modal-body").prepend(alert);
 
-                        $(this).find("input[name='nombreMateria']").val("");
+                        //Limpia input
+                        $("#modalCrearMateria").find("input[name='nombreMateria']").val("");
 
                     },
                     error: function(jqXHR, textStatus, errorThrown){
