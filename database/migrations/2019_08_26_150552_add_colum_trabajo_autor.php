@@ -27,7 +27,8 @@ class AddColumTrabajoAutor extends Migration
     public function down()
     {
         Schema::table('trabajos', function (Blueprint $table) {
-            //
+            $table->dropForeign(['id_user']);
+            $table->dropColumn('id_user');
         });
     }
 }
