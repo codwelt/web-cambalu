@@ -14,8 +14,8 @@ class AddColumTrabajoAutor extends Migration
     public function up()
     {
         Schema::table('trabajos', function (Blueprint $table) {
-            $table->integer("user_id")->unsigned();
-            $table->foreign("user_id")->references("id")->on("users");
+            $table->integer("id_user")->unsigned();
+            $table->foreign("id_user")->references("id")->on("users");
         });
     }
 
