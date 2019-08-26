@@ -25,7 +25,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlTextarea1">Mensaje</label>
-                                <textarea class="form-control" name="descripcion" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea class="form-control" name="mensaje" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 <small id="emailHelp" class="form-text text-muted">Quiere hacer alguna pregunta o decir algo antes de contactarlo, este es el momento.</small>
                             </div>
                             <div class="form-group form-check">
