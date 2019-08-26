@@ -11,7 +11,7 @@
                             @csrf
                             <div class="form-group">
                                 <label for="titulo">Titulo</label>
-                                <input type="email" class="form-control" name="titulo" required id="titulo" placeholder="Ingrese el titulo">
+                                <input type="text" class="form-control" name="titulo" required id="titulo" placeholder="Ingrese el titulo">
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlTextarea1">Descripcion</label>
