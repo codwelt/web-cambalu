@@ -20,6 +20,7 @@
 
     <!-- Custom CSS -->
     <link href="{{asset('startbootstrap/css/stylish-portfolio.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/animate.css')}}">
 
 </head>
 
@@ -29,9 +30,9 @@
 <!-- Header -->
 <header class="masthead d-flex">
     <div class="container text-center my-auto">
-        <img src="{{asset('img/logo2.png')}}" alt="">
-        <h1 class="mb-1">Camabalú</h1>
-        <h3 class="mb-5">
+        <img src="{{asset('img/logo2.png')}}" alt="{{ config('app.name') }}" class="wow bounceIn">
+        <h1 class="mb-1 wow bounceIn">Camabalú</h1>
+        <h3 class="mb-5 ">
             <em>Comparte, compra, vende, haz trueques y camabalaches de trabajos Universitarios. </em>
         </h3>
         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Explorar</a>
@@ -49,7 +50,10 @@
 
 <!-- Custom scripts for this template -->
 <script src="{{asset('startbootstrap/js/stylish-portfolio.min.js')}}"></script>
-
+<script src="{{asset('js/wow.min.js')}}"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 
 </html>
