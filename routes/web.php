@@ -32,3 +32,8 @@ Route::post('/store',[
     'uses' =>'Usuario\TrabajoController@store',
     'as' => 'trabajo.store'
 ]);
+
+Route::post('/materias',[
+    'uses' =>'Usuario\MateriaController@store',
+    'as' => 'materias.store'
+]);
