@@ -42,11 +42,12 @@
                             </div>
                             <div class="form-group">
                                 <label for="materiasSelect">Materia</label>
-                                <select class="form-control" id="materiasSelect" name="materia" required>
+                                <select class="form-control" id="materiasSelect" name="materia" required data-live-search="true">
                                     <option></option>
                                     @foreach($materias as $materia)
                                         <option value="{{$materia->id}}">{{$materia->nombre}}</option>
                                     @endforeach
+                                    <span class="help-inline">With <code>data-show-subtext="true" data-live-search="true"</code>. Try searching for california</span>
                                 </select>
                                 <small id="emailHelp" class="form-text text-muted">No esta la materia? <a href="#"  data-toggle="modal" data-target="#modalCrearMateria" class="badge badge-warning">Crear Materia</a></small>
                             </div>
