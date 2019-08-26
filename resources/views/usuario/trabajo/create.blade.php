@@ -54,7 +54,7 @@
                                 <input type="checkbox" class="form-check-input" requried id="checkTerms">
                                 <label class="form-check-label" for="checkTerms">Confirmo que este trabajo esta hecho por mi 💪</label>
                             </div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="submit" class="btn btn-primary">Enviar </button>
                         </form>
                     </div>
                 </div>
@@ -71,8 +71,15 @@
 
             $("#btnSubmitMateria").click(function(e){
 
+                var button = $(this);
 
                 var datoEnvio =   $("#modalCrearMateria").find("input[name='nombreMateria']").val();
+
+                //Se desabilita el boton
+                button.prop("disabled",true);
+
+                var spinerButton = '<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>';
+                button.prepend(spinerButton);
 
                 $.ajax({
                     headers: {
@@ -115,6 +122,10 @@
                     },
                     complete: function(){
 
+                        //Habilita el boton
+                        button.prop("disabled",false);
+                        //Elimina el spinner del boton
+                        button.find(".spinner-grow").remove();
                     }
                 });
 
