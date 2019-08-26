@@ -11,13 +11,15 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/',[
+    'uses' => 'WelcomeController@welcome',
+    'as' => 'welcome'
+]);
 
-    $trabajos = \App\Trabajo::all();
-    return view('welcome',[
-        'trabajos' => $trabajos
-    ]);
-});
+Route::get('/jardin',[
+    'uses' => 'WelcomeController@garden',
+    'as' => 'garden'
+]);
 
 Auth::routes();
 

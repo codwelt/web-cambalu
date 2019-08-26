@@ -30,12 +30,19 @@
 <!-- Header -->
 <header class="masthead d-flex">
     <div class="container text-center my-auto">
+<<<<<<< HEAD
         <img src="{{asset('img/logo2.png')}}" alt="{{ config('app.name') }}" class="wow bounceIn">
         <h1 class="mb-1 wow bounceIn">Camabalú</h1>
         <h3 class="mb-5 ">
             <em>Comparte, compra, vende, haz trueques y camabalaches de trabajos Universitarios. </em>
+=======
+        <img src="{{asset('img/logo2.png')}}" alt="">
+        <h1 class="mb-1">{{ config('app.name') }}</h1>
+        <h3 class="mb-5">
+            <em>Comparte, compra, vende, haz trueques y camabalaches de trabajos universitarios. </em>
+>>>>>>> e82dc5712da91bb973cbe517be1a00c2b4968c29
         </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Explorar</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger"  href="{{route('garden')}}">Explorar</a>
     </div>
     <div class="overlay"></div>
 </header>

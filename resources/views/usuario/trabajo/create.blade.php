@@ -128,8 +128,6 @@
                         button.find(".spinner-grow").remove();
                     }
                 });
-
-
             });
         });
 
