@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 use App\Trabajo;
 use Illuminate\Http\Request;
 
-class WelcomerController extends Controller
+class WelcomeController extends Controller
 {
     public function welcome()
     {
