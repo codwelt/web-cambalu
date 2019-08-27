@@ -3,6 +3,14 @@
 @section('content')
 
     <div class="container">
+        <!-- Your customer chat code -->
+        <div class="fb-customerchat"
+             attribution=setup_tool
+             page_id="106328624076384"
+             theme_color="#ffc300"
+             logged_in_greeting="Hola, en que trabajo estar interesado?"
+             logged_out_greeting="Hola, en que trabajo estar interesado?">
+        </div>
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -34,12 +42,13 @@
                             </div>
                             <button type="submit" class="btn btn-primary">Enviar </button>
                         </form>
+                        <!-- Load Facebook SDK for JavaScript -->
+                        <div id="fb-root"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Load Facebook SDK for JavaScript -->
-        <div id="fb-root"></div>
+
         <script>
             window.fbAsyncInit = function() {
                 FB.init({
@@ -55,14 +64,5 @@
                 js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));</script>
-
-        <!-- Your customer chat code -->
-        <div class="fb-customerchat"
-             attribution=setup_tool
-             page_id="106328624076384"
-             theme_color="#ffc300"
-             logged_in_greeting="Hola, en que trabajo estar interesado?"
-             logged_out_greeting="Hola, en que trabajo estar interesado?">
-        </div>
     </div>
 @endsection
