@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="card shadow-sm" >
-        <h1 class="text-center m-2">Lista de trabajos</h1>
+        <h1 class="text-center m-2">Directorio de trabajos</h1>
         <div class="card-body">
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 <h4 class="alert-heading">Como funciona!</h4>
