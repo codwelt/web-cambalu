@@ -15,8 +15,13 @@ class PostColumDeleteNombre extends Migration
     {
         Schema::table('contact', function (Blueprint $table) {
             $table->dropColumn("nombre");
+        });
+
+        Schema::table('contact', function (Blueprint $table) {
             $table->renameColumn("correo","whatsapp");
         });
+
+
     }
 
     /**
@@ -28,7 +33,11 @@ class PostColumDeleteNombre extends Migration
     {
         Schema::table('contact', function (Blueprint $table) {
             $table->string("nombre");
+        });
+        Schema::table('contact', function (Blueprint $table) {
             $table->renameColumn("whatsapp","correo");
         });
+
+
     }
 }
