@@ -156,7 +156,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
-                        @if (Route::has('register') && 1 == 0)
+                        @if (Route::has('register'))
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
@@ -211,6 +211,7 @@
                 <h4 class="title">Mi cuenta</h4>
                 <span class="acount-icon">
                 <a href="{{route('login')}}"><i class="fa fa-user" aria-hidden="true"></i>Perfil</a>
+                <a href="{{ route('register') }}"><i class="fa fa-user" aria-hidden="true"></i>Registrarse</a>
             </span>
             </div>
 

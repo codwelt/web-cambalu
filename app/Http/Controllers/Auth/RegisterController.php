@@ -52,6 +52,7 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users','regex:/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.+-]+\.edu.co$/i'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'whatsapp' => 'required'
         ]);
     }
 
@@ -67,6 +68,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'whatsapp' => $data['whatsapp']
         ]);
     }
 }

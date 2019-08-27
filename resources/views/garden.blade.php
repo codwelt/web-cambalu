@@ -2,6 +2,14 @@
 
 @section('content')
 <div class="container">
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+         attribution=setup_tool
+         page_id="106328624076384"
+         theme_color="#ffc300"
+         logged_in_greeting="Hola, te puedo ayudar en algo?"
+         logged_out_greeting="Hola, te puedo ayudar en algo?">
+    </div>
     <div class="card shadow-sm" >
         <h1 class="text-center m-2">Directorio de trabajos</h1>
         <div class="card-body">
@@ -29,6 +37,22 @@
             </div>
         </div>
     </div>
-
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
 </div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml            : true,
+            version          : 'v4.0'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 @endsection
