@@ -29,7 +29,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="titulo">WhatsApp:</label>
-                                <input type="tel" class="form-control" name="whatsapp" required id="titulo" placeholder="Ingrese tu whatsapp">
+                                <input type="tel" class="form-control" name="whatsapp" required id="titulo" placeholder="Ingresa tu whatsapp">
                                 <small id="emailHelp" class="form-text text-muted">Solo Colombia <i class="em em-flag-co"></i></small>
                             </div>
                             <div class= "form-group">
