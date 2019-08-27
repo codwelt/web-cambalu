@@ -50,9 +50,13 @@
                                 </select>
                                 <small id="emailHelp" class="form-text text-muted">No esta la materia? <a href="#"  data-toggle="modal" data-target="#modalCrearMateria" class="badge badge-warning">Crear Materia</a></small>
                             </div>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" requried id="checkTerms">
-                                <label class="form-check-label" for="checkTerms">Confirmo que este trabajo esta hecho por mi 💪</label>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                    <label class="form-check-label" for="invalidCheck2">
+                                        Confirmo que este trabajo esta hecho por mi 💪
+                                    </label>
+                                </div>
                             </div>
                             <button type="submit" class="btn btn-primary">Enviar </button>
                         </form>

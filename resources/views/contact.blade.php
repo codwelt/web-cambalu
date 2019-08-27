@@ -37,9 +37,13 @@
                                 <textarea class="form-control" name="mensaje" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 <small id="emailHelp" class="form-text text-muted">Quieres añadir alguna otra informacion, este es el espacio.</small>
                             </div>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" requried="required" id="checkTerms">
-                                <label class="form-check-label" for="checkTerms">Confirmo los datos son reales</label>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                    <label class="form-check-label" for="invalidCheck2">
+                                        Confirmo que quiero recibir mensajes al Whatsapp
+                                    </label>
+                                </div>
                             </div>
                             <button type="submit" class="btn btn-primary">Enviar </button>
                         </form>
