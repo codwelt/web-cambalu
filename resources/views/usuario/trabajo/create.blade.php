@@ -21,11 +21,10 @@
             </div>
         </div>
     </div>
-
-
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
+                @include('flash::message')
                 <div class="card">
                     <h5 class="card-header">Crear</h5>
                     <div class="card-body">

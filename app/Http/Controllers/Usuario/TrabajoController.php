@@ -35,6 +35,7 @@ class TrabajoController extends Controller
            'id_materia' => $request->get('materia')
         ]);
 
+        flash("Exito! Trabajo creado")->success()->important();
         return redirect()->back();
 
     }
