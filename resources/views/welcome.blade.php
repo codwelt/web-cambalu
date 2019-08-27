@@ -59,7 +59,7 @@
             <em>Encuentra y publica de trabajos universitarios. </em>
         </h3>
         <a class="btn btn-primary btn-xl js-scroll-trigger"  href="{{route('garden')}}">Explorar</a><br>
-        <small class="text-muted">Al navegar por en el portal usted acepta nuestros terminos y condiciones politica y tratamiento de datos.</small>
+        <small class="text-muted">Al navegar por en el portal usted acepta nuestros <a href="{{route('terminos')}}" target="_blank" >terminos y condiciones</a> <a target="_blank" href="{{route('politica')}}">politica y tratamiento de datos</a>.</small>
     </div>
     <div class="overlay">
 

@@ -178,7 +178,7 @@
                     <h4 class="title">Acerca de</h4>
                     <p>Cambalú es un directorio de trabajos universitarios de codigo abierto bajo la licencia <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank"> AGPLv3.</a></p>
                     <ul class="social-icon">
-                        <a href="#" class="social"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.facebook.com/cambaluuu" class="social"><i class="fab fa-facebook-square"></i></a>
                     </ul>
                 </div>
                 <div class="col-sm-3">
@@ -196,8 +196,11 @@
 
                 </div>
             </div>
-            <hr>
-            <div class="row text-center"><a href="https://www.facebook.com/cambaluuu" style="color: #fff;">Copyright © 2019 Codwelt.</a></div>
+            <div class="row">
+                <hr>
+                <div class="row text-center"><a href="https://www.codwelt.com" style="color: #fff;">Copyright © 2019 Codwelt.</a></div>
+            </div>
+
         </div>
     </footer>
 </body>

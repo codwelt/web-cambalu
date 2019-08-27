@@ -48,3 +48,11 @@ Route::post('/contact',[
     'uses' => 'ContactController@store',
     'as' => 'contact.store'
 ]);
+
+Route::get('terminos',function(){
+    return view('terminos');
+})->name('terminos');
+
+Route::get('politica',function(){
+    return view('politica');
+})->name('politica');

@@ -13,7 +13,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="alert alert-warning" role="alert">Compartenos en voz baja con ese amigo necesitado de nota.<i class="em em-speak_no_evil"></i>
+                <div class="alert alert-warning" role="alert">Compartenos en voz baja con ese amigo lo necesita.<i class="em em-speak_no_evil"></i>
                 </div>
                 <div class="card">
                     <h5 class="card-header">Contactar</h5>
@@ -41,7 +41,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
                                     <label class="form-check-label" for="invalidCheck2">
-                                        Aceptos los terminos y condiciones politica y tratamiento de datos.
+                                        Aceptos los  <a target="_blank" href="{{route('terminos')}}" >terminos y condiciones</a>, <a target="_blank" href="{{route('politica')}}">politica y tratamiento de datos.</a>
                                     </label>
                                 </div>
                             </div>
