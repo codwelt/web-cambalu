@@ -297,7 +297,7 @@ font-size:12pt">The User accepts that the contents generated, uploaded by him, w
              style="background-color:#fafafa; line-height:1.38; margin-bottom:0pt; margin-top:0pt; text-align:justify"><span
                     style="background-color:transparent; color:#333333; font-family:Montserrat;
 font-size:12pt">In case of claims that may be filed by users or by third parties in relation to possible breaches of intellectual property rights over any of the contents of the Website and / or Products
-should be directed to the following email address: (admin @ Cambalu .com). Once notified to this email, said content will be automatically removed from the Website and / or Product until the person who
+should be directed to the following email address: (admin@codwelt.com). Once notified to this email, said content will be automatically removed from the Website and / or Product until the person who
 has published the content in dispute has resolved the conflict with who sends the claim.</span></div>
 
         <div dir="ltr"
