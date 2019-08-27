@@ -13,7 +13,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="alert alert-warning" role="alert">Compartenos en voz baja con ese amigo lo necesita.<i class="em em-speak_no_evil"></i>
+                <div class="alert alert-warning" role="alert">Compartenos en voz baja con ese amigo que lo necesita.<i class="em em-speak_no_evil"></i>
                 </div>
                 <div class="card">
                     <h5 class="card-header">Contactar</h5>
