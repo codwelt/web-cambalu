@@ -8,33 +8,33 @@
              attribution=setup_tool
              page_id="106328624076384"
              theme_color="#ffc300"
-             logged_in_greeting="Hola, en que trabajo estar interesado?"
-             logged_out_greeting="Hola, en que trabajo estar interesado?">
+             logged_in_greeting="Hola, tienes alguna duda con el trabajo {{$trabajo->titulo}}? preguntanos antes de hacer tu solicitud de compra"
+             logged_out_greeting="Hola, tienes alguna duda con el trabajo {{$trabajo->titulo}}? preguntanos antes de hacer tu solicitud de compra">
         </div>
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
                     <h5 class="card-header">Contactar</h5>
                     <div class="card-body">
+                        <div class="alert alert-warning" role="alert">Compartenos en voz baja con ese amigo necesitado de nota.<i class="em em-speak_no_evil"></i>
+                        </div>
+
                         <form method="post" action="{{route('contact.store')}}">
                             @csrf
                             <div class="form-group">
-                                <label for="titulo">Trabajo</label>
+                                <label for="titulo">Trabajo:</label>
                                 <input type="text" class="form-control" name="trabajo" disabled value="{{$trabajo->titulo}}" >
                                 <input type="hidden" class="form-control" name="id_trabajo" required  value="{{$trabajo->id}}" >
                             </div>
                             <div class="form-group">
-                                <label for="titulo">Nombre</label>
-                                <input type="text" class="form-control" name="nombre" required id="titulo" placeholder="Ingrese su nombre">
+                                <label for="titulo">WhatsApp:</label>
+                                <input type="tel" class="form-control" name="whatsapp" required id="titulo" placeholder="Ingrese tu whatsapp">
+                                <small id="emailHelp" class="form-text text-muted">Solo Colombia <i class="em em-flag-co"></i></small>
                             </div>
-                            <div class="form-group">
-                                <label for="titulo">Correo</label>
-                                <input type="email" class="form-control" name="correo" required id="titulo" placeholder="Ingrese su correo">
-                            </div>
-                            <div class="form-group">
+                            <div class= "form-group">
                                 <label for="exampleFormControlTextarea1">Mensaje</label>
                                 <textarea class="form-control" name="mensaje" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                <small id="emailHelp" class="form-text text-muted">Quiere hacer alguna pregunta o decir algo antes de contactarlo, este es el momento.</small>
+                                <small id="emailHelp" class="form-text text-muted">Quieres añadir alguna otra informacion, este es el espacio.</small>
                             </div>
                             <div class="form-group form-check">
                                 <input type="checkbox" class="form-check-input" requried="required" id="checkTerms">

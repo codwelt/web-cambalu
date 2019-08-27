@@ -8,6 +8,6 @@ class Contact extends Model
 {
     protected $table = "contacts";
 
-    protected $fillable = ["mensaje", "nombre","correo","id_trabajo"];
+    protected $fillable = ["mensaje", "whatsapp","id_trabajo"];
 
 }
