@@ -186,10 +186,11 @@
             </div>
         </div>
     </nav>
-
-    <main class="py-4 bg-light">
-        @yield('content')
-    </main>
+    <div style="min-height: 65vh;">
+        <main class="py-4 bg-light">
+            @yield('content')
+        </main>
+    </div>
     <script>
         $('#flash-overlay-modal').modal();
     </script>

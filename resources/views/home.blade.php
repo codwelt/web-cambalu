@@ -5,11 +5,22 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <h5 class="card-header">Featured</h5>
+                <h5 class="card-header">Mis trabajos</h5>
                 <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="card-columns">
+                        @foreach($trabajos as $trabajo)
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{$trabajo->titulo}}</h5>
+                                    <p class="card-text">{{$trabajo->descripcion}}</p>
+                                    <a href="{{route('contact.create',['trabajo' => $trabajo->id])}}" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Contactar</a>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="badge badge-warning">{{$trabajo->materia->nombre}}</a>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>
