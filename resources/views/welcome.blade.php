@@ -50,20 +50,20 @@
 </head>
 
 <body id="page-top">
-
-
 <!-- Header -->
 <header class="masthead d-flex">
     <div class="container text-center my-auto">
-
         <img src="{{asset('img/logo2.png')}}" alt="{{ config('app.name') }}" class="wow bounceIn">
         <h1 class="mb-1 wow bounceIn">{{ config('app.name') }}</h1>
         <h3 class="mb-5 ">
             <em>Comparte, compra, vende, haz trueques y camabalaches de trabajos Universitarios. </em>
         </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger"  href="{{route('garden')}}">Explorar</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger"  href="{{route('garden')}}">Explorar</a><br>
+        <small class="text-muted">Al navegar por en el portal usted acepta nuestros terminos y condiciones politica y tratamiento de datos.</small>
     </div>
-    <div class="overlay"></div>
+    <div class="overlay">
+
+    </div>
 </header>
 
 
