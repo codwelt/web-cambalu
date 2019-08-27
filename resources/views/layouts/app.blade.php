@@ -189,6 +189,9 @@
                 </div>
 
                 <div class="col-sm-3">
+                    <h4 class="title">Terminos</h4>
+                    <span class="acount-icon"><a href="{{route('terminos')}}">Terminos y Condiciones</a></span>
+                    <span class="acount-icon"><a href="{{route('politica')}}">Politica y tratamiento de datos</a></span>
 
                 </div>
 
