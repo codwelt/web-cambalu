@@ -107,6 +107,9 @@
         <main class="py-4 bg-light">
             @yield('content')
         </main>
+        <script>
+            $('#flash-overlay-modal').modal();
+        </script>
     </div>
 </body>
 </html>

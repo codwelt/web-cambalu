@@ -24,9 +24,11 @@ class ContactController extends Controller
 
         if($contact){
             //Mensaje de que fue contactado
+
+            flash('Error! No fue posible enviar el mensaje de contacto. Intentalo nuevamente!')->error()->important();
             return redirect()->route('garden');
         }
-        //Mensaje de que fallo la creacion del contacto
+        flash('Exito! El mensaje fue recibido, a partir de ahora comienzan las 24H')->success()->important();
         return redirect()->route('garden');
 
     }

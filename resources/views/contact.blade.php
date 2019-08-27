@@ -13,12 +13,13 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-8">
+                <div class="alert alert-warning" role="alert">Compartenos en voz baja con ese amigo necesitado de nota.<i class="em em-speak_no_evil"></i>
+                </div>
                 <div class="card">
                     <h5 class="card-header">Contactar</h5>
                     <div class="card-body">
-                        <div class="alert alert-warning" role="alert">Compartenos en voz baja con ese amigo necesitado de nota.<i class="em em-speak_no_evil"></i>
-                        </div>
 
+                        @include('flash::message')
                         <form method="post" action="{{route('contact.store')}}">
                             @csrf
                             <div class="form-group">
