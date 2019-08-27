@@ -56,7 +56,7 @@
         <img src="{{asset('img/logo2.png')}}" alt="{{ config('app.name') }}" class="wow bounceIn">
         <h1 class="mb-1 wow bounceIn">{{ config('app.name') }}</h1>
         <h3 class="mb-5 ">
-            <em>Comparte o adquiere de trabajos Universitarios. </em>
+            <em>Comparte o consigue de trabajos Universitarios. </em>
         </h3>
         <a class="btn btn-primary btn-xl js-scroll-trigger"  href="{{route('garden')}}">Explorar</a><br>
         <small class="text-muted">Al navegar por en el portal usted acepta nuestros terminos y condiciones politica y tratamiento de datos.</small>

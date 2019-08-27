@@ -8,8 +8,8 @@
              attribution=setup_tool
              page_id="106328624076384"
              theme_color="#ffc300"
-             logged_in_greeting="Hola, tienes alguna duda con el trabajo {{$trabajo->titulo}}? preguntanos antes de hacer tu solicitud de compra"
-             logged_out_greeting="Hola, tienes alguna duda con el trabajo {{$trabajo->titulo}}? preguntanos antes de hacer tu solicitud de compra">
+             logged_in_greeting="Hola, tienes alguna duda con el trabajo {{$trabajo->titulo}}?"
+             logged_out_greeting="Hola, tienes alguna duda con el trabajo {{$trabajo->titulo}}?">
         </div>
         <div class="row justify-content-center">
             <div class="col-md-8">
