@@ -27,7 +27,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.css">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({
@@ -45,6 +44,67 @@
 
         gtag('config', 'UA-146475064-1');
     </script>
+
+    <style>
+        /*FOOTER START///////////////////*/
+        .footer {
+            padding: 50px 0 20px 0;
+            background-color: #090c14;
+            color: #878c94;
+        }
+        .footer .title{
+            text-align: left;
+            color:#fff;
+            font-size:25px;
+        }
+        .footer .social-icon{
+            padding:0px;
+            margin:0px;
+        }
+        .footer .social-icon a{
+            display:inline-block;
+            color:#fff;
+            font-size:25px;
+            padding:5px;
+        }
+        .footer .acount-icon a{
+            display:block;
+            color:#fff;
+            font-size:18px;
+            padding:5px;
+            text-decoration:none;
+        }
+        .footer .acount-icon .fa{
+            margin-right:25px;
+        }
+        .footer .category a {
+            text-decoration: none;
+            color: #fff;
+            display: inline-block;
+            padding: 5px 20px;
+            margin: 1px;
+            border-radius:4px;
+            margin-top: 6px;
+            background-color: black;
+            border: solid 1px #fff;
+        }
+        .footer .payment{
+            margin:0px;
+            padding:0px;
+            list-style-type:none
+        }
+        .footer .payment li{
+            list-style-type:none
+        }
+        .footer .payment li a {
+            text-decoration: none;
+            display: inline-block;
+            color: #fff;
+            float: left;
+            font-size: 25px;
+            padding: 10px 10px;
+        }
+    </style>
 
 </head>
 <body>
@@ -111,5 +171,34 @@
             $('#flash-overlay-modal').modal();
         </script>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h4 class="title">Acerca de</h4>
+                    <p>Cambalú es un directorio de trabajos universitarios de codigo abierto bajo la licencia <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank"> AGPLv3.</a></p>
+                    <ul class="social-icon">
+                        <a href="#" class="social"><i class="fab fa-facebook-square"></i></a>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h4 class="title">Mi cuenta</h4>
+                    <span class="acount-icon">
+            <a href="{{route('login')}}"><i class="fa fa-user" aria-hidden="true"></i>Perfil</a>
+            </span>
+                </div>
+
+                <div class="col-sm-3">
+
+                </div>
+
+                <div class="col-sm-3">
+
+                </div>
+            </div>
+            <hr>
+            <div class="row text-center"><a href="https://www.facebook.com/cambaluuu" style="color: #fff;">Copyright © 2019 Codwelt.</a></div>
+        </div>
+    </footer>
 </body>
 </html>
