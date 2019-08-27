@@ -41,7 +41,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
                                     <label class="form-check-label" for="invalidCheck2">
-                                        Confirmo que quiero recibir mensajes al Whatsapp
+                                        Aceptos los terminos y condiciones politica y tratamiento de datos.
                                     </label>
                                 </div>
                             </div>
