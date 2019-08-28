@@ -200,7 +200,8 @@
         <div class="row">
             <div class="col-sm-3">
                 <h4 class="title">Acerca de</h4>
-                <p>Cambalú es un directorio de trabajos universitarios de codigo abierto bajo la licencia <a
+                <p>Cambalú es un empalmador entre estudiantes universitarios.
+                    Nuestros usuarios son felices por que pueden obtener beneficios de los trabajos de la universidad que alguna vez hicieron pero que ya no usan. Cambalú es un portal de código abierto desarrollada por Codwelt bajo la licencia <a
                             href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank"> AGPLv3.</a></p>
                 <ul class="social-icon">
                     <a href="https://www.facebook.com/cambaluuu" class="social"><i
