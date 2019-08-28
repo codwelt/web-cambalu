@@ -13,12 +13,6 @@
     <div class="card shadow-sm" >
         <h1 class="text-center m-2">Directorio de trabajos</h1>
         <div class="card-body">
-
-            <select class="selectpicker"  data-live-search="true">
-                <option>Mustard</option>
-                <option>Ketchup</option>
-                <option>Barbecue</option>
-            </select>
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 <h4 class="alert-heading">Como funciona!</h4>
                 <p>Te contactas.<i class="em em-calling"></i></p>
