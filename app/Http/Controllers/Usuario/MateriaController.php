@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Usuario;
 
+use App\Http\Requests\Usuario\StoreMateria;
 use App\Materia;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -14,7 +15,12 @@ class MateriaController extends Controller
         $this->middleware('auth');
     }
 
-    public function store(Request $request)
+    /**
+     * @param StoreMateria $request
+     * @return \Illuminate\Http\JsonResponse
+     * @throws \JsonException
+     */
+    public function store(StoreMateria $request)
     {
         $nombreMateria = Str::upper($request->get('nombreMateria'));
 
