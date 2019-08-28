@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <h5 class="card-header">Como Ganas</h5>
+                    <h5 class="card-header">Como Ganar <i class="em em-moneybag"></i></h5>
                     <div class="card-body">
 
 

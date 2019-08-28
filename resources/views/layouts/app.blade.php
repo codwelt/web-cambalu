@@ -196,7 +196,7 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-6">
                 <h4 class="title">Acerca de</h4>
                 <p>Cambalú es un empalmador entre estudiantes universitarios.<i class="em em-i_love_you_hand_sign"></i>
                     Nuestros usuarios son felices por que pueden obtener beneficios de los trabajos de la universidad que alguna vez hicieron pero que ya no usan.
