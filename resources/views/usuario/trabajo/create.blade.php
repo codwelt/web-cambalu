@@ -41,7 +41,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="materiasSelect">Materia</label>
-                                <select class="form-control" id="materiasSelect" name="materia" required data-live-search="true">
+                                <select class="form-control selectpicker"   data-live-search="true"  data-live-search-placeholder="Seleccione la materia"  id="materiasSelect" name="materia" required >
                                     <option></option>
                                     @foreach($materias as $materia)
                                         <option value="{{$materia->id}}">{{$materia->nombre}}</option>
