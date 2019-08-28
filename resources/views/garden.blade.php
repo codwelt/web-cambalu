@@ -16,7 +16,7 @@
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 <h4 class="alert-heading">Como funciona!</h4>
                 <p>Te contactas.<i class="em em-calling"></i></p>
-                <p>El autor te escribira por WhatsApp y llegas a un acuerdo con él de manera privada. <i class="em em-sunglasses"></i></p>
+                <p>El autor te escribira por WhatsApp y llegas a un acuerdo con él de manera privada para obtener el trabajo. <i class="em em-sunglasses"></i></p>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>

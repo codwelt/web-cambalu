@@ -130,7 +130,7 @@
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light  shadow-sm" style="background-color: #ffc107; !important">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('garden') }}">
+            <a class="navbar-brand" href="{{\Auth::guest() ? route('garden') : route('home') }}">
                 <img src="{{asset('img/logo2.png')}}" width="30" height="30" class="d-inline-block align-top" alt="">
                 {{ config('app.name', 'Laravel') }}
             </a>
@@ -191,17 +191,16 @@
             @yield('content')
         </main>
     </div>
-    <script>
-        $('#flash-overlay-modal').modal();
-    </script>
+
 </div>
 <footer class="footer">
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
                 <h4 class="title">Acerca de</h4>
-                <p>Cambalú es un empalmador entre estudiantes universitarios.
-                    Nuestros usuarios son felices por que pueden obtener beneficios de los trabajos de la universidad que alguna vez hicieron pero que ya no usan. Cambalú es un portal de código abierto desarrollada por Codwelt bajo la licencia <a
+                <p>Cambalú es un empalmador entre estudiantes universitarios.<i class="em em-i_love_you_hand_sign"></i>
+                    Nuestros usuarios son felices por que pueden obtener beneficios de los trabajos de la universidad que alguna vez hicieron pero que ya no usan.
+                    Cambalú es un portal de código abierto desarrollada por <span style="color: #009688; text-decoration: underline; " data-toggle="tooltip" data-placement="left" title="Somos Codwelt y somos estudiantes unviesitarios. Desarrollamos Ideas, construimos el futuro. Visitanos en www.codwelt.com">Codwelt</span> bajo la licencia <a
                             href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank"> AGPLv3.</a></p>
                 <ul class="social-icon">
                     <a href="https://www.facebook.com/cambaluuu" class="social"><i
@@ -209,10 +208,12 @@
                 </ul>
             </div>
             <div class="col-sm-3">
-                <h4 class="title">Mi cuenta</h4>
-                <span class="acount-icon">
-                <a href="{{route('login')}}"><i class="fa fa-user" aria-hidden="true"></i>Perfil</a>
-                <a href="{{ route('register') }}"><i class="fa fa-user" aria-hidden="true"></i>Registrarse</a>
+                @guest
+                    <h4 class="title">Mi cuenta</h4>
+                    <span class="acount-icon">
+                    <a href="{{route('login')}}"><i class="fa fa-user" aria-hidden="true"></i>Login</a>
+                    <a href="{{ route('register') }}"><i class="fa fa-user" aria-hidden="true"></i>Registrarse</a>
+                @endguest
             </span>
             </div>
 
@@ -238,5 +239,11 @@
 
     </div>
 </footer>
+<script>
+    //enable overlay alert
+    $('#flash-overlay-modal').modal();
+    //Enable ppopover
+    $('[data-toggle="tooltip"]').tooltip()
+</script>
 </body>
 </html>
