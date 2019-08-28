@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <div class="card">
+    <div class="card shadow-lg">
         <h5 class="card-header">Mis trabajos</h5>
         <div class="card-body">
             <div class="card-columns">

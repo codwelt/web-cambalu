@@ -145,7 +145,7 @@
                 <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('trabajo.create') }}">{{ __('Crear Trabajo') }}</a>
+                            <a class="nav-link" href="{{ route('trabajo.create') }}">{{ __('Anunciar Trabajo') }} <i class="em em-speaking_head_in_silhouette"></i></a>
                         </li>
                     </ul>
             @endauth
