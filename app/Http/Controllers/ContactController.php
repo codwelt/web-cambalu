@@ -6,6 +6,7 @@ use App\Contact;
 use App\Http\Requests\Usuario\StoreContact;
 use App\Trabajo;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -48,7 +49,7 @@ class ContactController extends Controller
                 $msj->to($autor->email);
             });
 
-        
+
         flash('Exito! El mensaje fue recibido, el autor se comunicara con tigo pronto.')->success()->important();
 
 
