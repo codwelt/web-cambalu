@@ -2,7 +2,7 @@
 /**
  * @see https://github.com/artesaos/seotools
  */
-$descripcion = "Cambalú es un portal para anunciar los trabajos universitarios que tu tienes y que otros quieren conseguir para obtener un beneficio(dinero, otro trabajo, una jartera, etc).";
+$descripcion = "Anuncia tus trabajos universitarios y gana con ellos (dinero, otro trabajo, una jartera, etc).";
 
 $keywords = ["trabajos","universidad","cambalache","trueque","universitarios","gratis","comprar","vender"];
 
