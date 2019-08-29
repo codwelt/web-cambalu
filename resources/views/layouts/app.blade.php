@@ -3,16 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    {!! SEOMeta::generate() !!}
+    {!! OpenGraph::generate() !!}
+    {!! Twitter::generate() !!}
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name') }}</title>
-
-
-
-
-
 
 
     <!-- Fonts -->
@@ -229,7 +226,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="title">Acerca de</h4>
-                <p>Cambalú es un portal para anunciar los trabajos universitarios que tu tienes y que otros quieren conseguir.<i class="em em-i_love_you_hand_sign"></i>
+                <p>Cambalú es un portal para anunciar los trabajos universitarios que tu tienes y que otros quieren conseguir para obtener un beneficio(dinero, otro trabajo, una jartera, etc).<i class="em em-i_love_you_hand_sign"></i>
                     Nuestros usuarios son felices por que pueden obtener beneficios de los trabajos de la universidad que alguna vez hicieron pero que ya no usan.
                     Cambalú es un portal de código abierto desarrollada por <span style="color: #009688; text-decoration: underline; " data-toggle="tooltip" data-placement="left" title="Somos Codwelt y somos estudiantes unviesitarios. Desarrollamos Ideas, construimos el futuro. Visitanos en www.codwelt.com">Codwelt</span> bajo la licencia <a
                             href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank"> AGPLv3.</a></p>
