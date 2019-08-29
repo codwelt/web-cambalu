@@ -57,3 +57,8 @@ Route::get('politica',function(){
     return view('politica');
 })->name('politica');
 
+
+Route::get('gana-gana',function(){
+   return view('gana_gana');
+})->name('gana-gana');
+

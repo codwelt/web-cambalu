@@ -164,7 +164,7 @@
                     <ul class="navbar-nav mr-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{{\Auth::guest() ? route('garden') : route('home') }}"><i class="fas fa-home"></i> {{ __('Inicio') }}</a>
+                            <a class="nav-link" href="{{\Auth::guest() ? route('garden') : route('home') }}">{{ __('Inicio') }}</a>
                         </li>
                         @auth
                         <li class="nav-item">
