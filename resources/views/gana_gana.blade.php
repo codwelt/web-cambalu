@@ -34,7 +34,10 @@
                                 <li><i class="em em-two"></i> Anunciar los trabajos que tienes</li>
                                 <li><i class="em em-three"></i> Estar atento a tu whatsApp por que te enviaremos por whatsapp la siguiente información cuando alguien quiera algún trabajo</li>
                             </ul>
+
+
                         </div>
+                        <img src="{{asset('img/contact-whats-author.png')}}" alt="..." class="img-thumbnail rounded mx-auto d-block">
                         <!-- Load Facebook SDK for JavaScript -->
                         <div id="fb-root"></div>
                     </div>
