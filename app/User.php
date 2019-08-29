@@ -38,6 +38,11 @@ class User extends Authenticatable
     ];
 
 
+    public function getIdCrypt()
+    {
+        return $this->id;
+    }
+
     public function trabajos()
     {
         return $this->hasMany(Trabajo::class,"id_user","id");

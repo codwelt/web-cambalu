@@ -1,5 +1,6 @@
 <?php
 namespace App;
+use Cog\Laravel\Optimus\Facades\Optimus;
 use Illuminate\Database\Eloquent\Model;
 class Trabajo extends Model
 {
@@ -8,6 +9,12 @@ class Trabajo extends Model
 
     protected $fillable = ["titulo","descripcion", "id_materia"];
 
+
+    public function getIdCrypt()
+    {
+        return Optimus::encode($this->id);
+
+    }
 
     public function materia()
     {
