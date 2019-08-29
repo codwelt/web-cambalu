@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Contact;
 use App\Http\Requests\Usuario\StoreContact;
 use App\Trabajo;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -43,7 +44,13 @@ class ContactController extends Controller
 
         //Envio de correo
         $autor = $trabajo->autor;
-        Mail::send('email.contact',[],
+        Mail::send('email.contact',[
+            'trabajo' => $trabajo->titulo,
+            'materia' => $trabajo->materia->nombre,
+            'fecha' => Carbon::now()->toDateString(),
+            'whatsapp' => $contact->whatsapp,
+            'mensaje' => $contact->mensaje
+        ],
             function($msj) use ($autor){
                 $msj->subject("Alguien quiere tu trabajo!!");
                 $msj->to($autor->email);

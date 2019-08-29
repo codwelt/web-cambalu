@@ -125,7 +125,7 @@
                                 <tr>
                                     <td style="font-size: 30px; text-align:center;">
                                         <br>
-                                        Awesome Co
+                                        Falicidades!! Alquien quiere tu trabajo
                                         <br>
                                         <br>
                                     </td>
@@ -141,7 +141,7 @@
                                 </tr>
                                 <tr>
                                     <td class="headline">
-                                        Your opinion matters!
+                                        Aqui te dejamos su informacion
                                     </td>
                                 </tr>
                                 <tr>
@@ -151,12 +151,11 @@
                                             <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" width="80%">
                                                 <tr>
                                                     <td style="color:#187272;">
-                                                        <br>
-                                                        By letting us know how happy you are with us you will help us improve our services! Please take a moment to click on one of the buttons below. 0 being not happy and 10 being very happy!
-                                                        <br />
-                                                        <br />
-                                                        <br>
-                                                        <br>
+                                                        <b>Trabajo:</b> {{$titulo}}<br>
+                                                        <b>Materia:</b> {{$materia}}<br>
+                                                        <b>Fecha:</b> {{$fecha}}<br>
+                                                        <b>WhatsApp:</b> {{$whatsapp}}<br>
+                                                        <b>Mensaje:</b> {{$mensaje}}
                                                     </td>
                                                 </tr>
                                             </table>
@@ -166,6 +165,7 @@
                                 </tr>
                             </table>
 
+                            <!--
                             <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" class="force-full-width" bgcolor="#f5774e">
                                 <tr>
                                     <td style="background-color:#f5774e;">
@@ -240,7 +240,7 @@
                                             <table style="margin: 0 auto;" cellspacing="0" cellpadding="0" class="force-width-80">
                                                 <tr>
                                                     <td style="color:#933f24; text-align: center;">
-                                                        (Unhappy - Happy)
+                                                        (Se Feliz!!)
                                                     </td>
                                                 </tr>
                                             </table>
@@ -249,9 +249,9 @@
                                                 <tr>
                                                     <td style="text-align:center; color:#933f24;">
                                                         <br>
-                                                        Thank you for your time! We really appreciate it.
+                                                        Gracias por preferirnos! Nosotros realmente lo <apreciamos></apreciamos>.
                                                         <br>
-                                                        Awesome Inc
+                                                        Cambalu
                                                         <br>
                                                         <br>
                                                         <br>
@@ -265,28 +265,29 @@
 
 
                             </table>
+                            -->
 
                             <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" class="force-full-width" bgcolor="#414141" style="margin: 0 auto">
                                 <tr>
                                     <td style="background-color:#414141;">
                                         <br>
                                         <br>
-                                        <img src="https://www.filepicker.io/api/file/R4VBTe2UQeGdAlM7KDc4" alt="google+">
-                                        <img src="https://www.filepicker.io/api/file/cvmSPOdlRaWQZnKFnBGt" alt="facebook">
-                                        <img src="https://www.filepicker.io/api/file/Gvu32apSQDqLMb40pvYe" alt="twitter">
+                                        <!--<img src="https://www.filepicker.io/api/file/R4VBTe2UQeGdAlM7KDc4" alt="google+">-->
+                                        <a href="https://www.facebook.com/cambaluuu" target="_blank"> <img src="https://www.filepicker.io/api/file/cvmSPOdlRaWQZnKFnBGt" alt="facebook"></a>
+                                        <!--<img src="https://www.filepicker.io/api/file/Gvu32apSQDqLMb40pvYe" alt="twitter">-->
                                         <br>
                                         <br>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="color:#bbbbbb; font-size:12px;">
-                                        <a href="#">View in browser</a> | <a href="#">Unsubscribe</a> | <a href="#">Contact</a>
+                                        <!--<a href="#">View in browser</a> | <a href="#">Unsubscribe</a> | <a href="#">Contact</a>-->
                                         <br><br>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="color:#bbbbbb; font-size:12px;">
-                                        © 2014 All Rights Reserved
+                                        <a href="https://codwelt.com/" target="_blank">Codwelt </a> © 2094 Todos los derechos reservados
                                         <br>
                                         <br>
                                     </td>
