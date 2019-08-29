@@ -11,7 +11,7 @@
          logged_out_greeting="Hola, te puedo ayudar en algo?">
     </div>
     <div class="alert alert-warning alert-dismissible fade show " role="alert" id="alertGanaGana">
-        <h4 class="alert-heading animated infinite bounce delay-2s ">Como Ganar Aqui! <i class="em em-moneybag"></i></h4>
+        <h4 class="alert-heading animated infinite bounce delay-2s slow ">Como Ganar Aqui! <i class="em em-moneybag"></i></h4>
         <p>
             <b>¿Como Ganas?</b><br>
 
