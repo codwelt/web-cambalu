@@ -15,7 +15,6 @@
             <div class="col-md-8">
                 <div class="card shadow-sm">
                     <div class="card-body">
-
                         <div class="alert alert-warning " role="alert">
                             <h4 class="alert-heading">Como Ganar Aqui! <i class="em em-moneybag"></i></h4>
                             <p>
@@ -32,7 +31,8 @@
                             <ul>
                                 <li><i class="em em-one"></i> Registrándote en la página  |    <a href="{{route("register")}}" ><small>Registrarse ya!</small></a></li>
                                 <li><i class="em em-two"></i> Anunciar los trabajos que tienes</li>
-                                <li><i class="em em-three"></i> Estar atento a tu whatsApp por que te enviaremos por whatsapp la siguiente información cuando alguien quiera algún trabajo</li>
+                                <li><i class="em em-three"></i> Estar atento a tu correo con el que te registraste te enviaremos la informacion de la persona que quiere tu trabajo y tambien al WhatsApp te enviaremos siguiente información cuando alguien quiera algún trabajo</li>
+                                <li><i class="em em-four"></i> Luego te pones en contacto con la persona que quiere tu trabajo y llegas a un acuerdo de le vas a pedir a cambio de tu trabajo.</li>
                             </ul>
 
 

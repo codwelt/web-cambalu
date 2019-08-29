@@ -39,7 +39,23 @@ class ContactController extends Controller
             flash('Error! No fue posible enviar el mensaje de contacto. Intentalo nuevamente!')->error()->important();
             return redirect()->back()->withInput();
         }
+
+        //Envio de correo
+        $autor = $trabajo->autor;
+        Mail::send('email.contact',[],
+            function($msj) use ($autor){
+                $msj->subject("Alguien quiere tu trabajo!!");
+                $msj->to($autor->email);
+            });
+
+        
         flash('Exito! El mensaje fue recibido, el autor se comunicara con tigo pronto.')->success()->important();
+
+
+
+
+
+
         return redirect()->back();
 
     }
