@@ -132,7 +132,7 @@
                                 </tr>
                             </table>
 
-                            <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" class="force-full-width" bgcolor="#4dbfbf">
+                            <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" class="force-full-width" bgcolor="#ffc107">
                                 <tr>
                                     <td>
                                         <br>
