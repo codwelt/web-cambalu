@@ -23,7 +23,7 @@
 
             <br><b>¿Como comienzo a anunciar?</b><br>
             <ul>
-            <li><i class="em em-one"></i> Registrándote en la página  |    <a href="{{route("register")}}"   target="_blank"><small>Registrarse ya!</small></a></li>
+            <li><i class="em em-one"></i> Registrándote en la página  |    <a href="{{route("register")}}" ><small>Registrarse ya!</small></a></li>
             <li><i class="em em-two"></i> Anunciar los trabajos que tienes</li>
             <li><i class="em em-three"></i> Estar atento a tu whatsApp por que te enviaremos por whatsapp la siguiente información cuando alguien quiera algún trabajo</li>
 
@@ -50,18 +50,18 @@
     <div class="card shadow-sm" >
         <h1 class="text-center m-2">Directorio de trabajos</h1>
         <div class="card-body">
-
-
+            @include('flash::message')
             <div class="card-columns">
                 @foreach($trabajos as $trabajo)
                     <div class="card">
                         <div class="card-body">
+
                             <h5 class="card-title">{{$trabajo->titulo}}</h5>
                             <small class="text-muted cat">
                                 <i class="fas fa-book text-warning"></i> {{$trabajo->materia->nombre}}
                             </small>
                             <p class="card-text">{{$trabajo->descripcion}}</p>
-                            <a href="{{route('contact.create',['trabajo' => $trabajo->id])}}" class="btn btn-warning"><i class="fab fa-whatsapp"></i> Contactar</a>
+                            <a href="{{route('contact.create',['trabajo' => $trabajo])}}" class="btn btn-warning"><i class="fab fa-whatsapp"></i> Contactar</a>
 
                         </div>
                         <div class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">

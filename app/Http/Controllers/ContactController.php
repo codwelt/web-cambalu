@@ -24,18 +24,23 @@ class ContactController extends Controller
 
     }
 
-    public function store(StoreContact $request)
+    public function store(StoreContact $request,Trabajo $trabajo)
     {
-        $contact = Contact::create($request->only(["mensaje","whatsapp","id_trabajo"]));
 
-        if($contact){
+        $data = $request->only(["mensaje","whatsapp"]);
+
+        $data['id_trabajo'] = $trabajo->id;
+
+        $contact = Contact::create($data);
+
+        if($contact == null){
             //Mensaje de que fue contactado
 
             flash('Error! No fue posible enviar el mensaje de contacto. Intentalo nuevamente!')->error()->important();
-            return redirect()->route('garden');
+            return redirect()->back()->withInput();
         }
-        flash('Exito! El mensaje fue recibido, a partir de ahora comienzan las 24H')->success()->important();
-        return redirect()->route('garden');
+        flash('Exito! El mensaje fue recibido, el autor se comunicara con tigo pronto.')->success()->important();
+        return redirect()->back();
 
     }
 }

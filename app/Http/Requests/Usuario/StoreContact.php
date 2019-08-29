@@ -24,8 +24,7 @@ class StoreContact extends FormRequest
     public function rules()
     {
         return [
-            'whatsapp' => 'required',
-            'id_trabajo' => 'required|exist:trabajos,id'
+            'whatsapp' => 'required'
         ];
     }
 }

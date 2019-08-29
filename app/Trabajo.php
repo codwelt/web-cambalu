@@ -1,9 +1,11 @@
 <?php
 namespace App;
 use Cog\Laravel\Optimus\Facades\Optimus;
+use Cog\Laravel\Optimus\Traits\OptimusEncodedRouteKey;
 use Illuminate\Database\Eloquent\Model;
 class Trabajo extends Model
 {
+    use OptimusEncodedRouteKey;
 
     protected $table = "trabajos";
 

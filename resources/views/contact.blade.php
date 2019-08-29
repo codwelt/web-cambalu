@@ -20,12 +20,11 @@
                     <div class="card-body">
 
                         @include('flash::message')
-                        <form method="post" action="{{route('contact.store')}}">
+                        <form method="post" action="{{route('contact.store',['trabajo' => $trabajo])}}">
                             @csrf
                             <div class="form-group">
                                 <label for="titulo">Trabajo:</label>
                                 <input type="text" class="form-control" name="trabajo" disabled value="{{$trabajo->titulo}}" >
-                                <input type="hidden" class="form-control" name="id_trabajo" required  value="{{$trabajo->id}}" >
                             </div>
                             <div class="form-group">
                                 <label for="titulo">WhatsApp:</label>

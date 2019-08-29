@@ -155,18 +155,31 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="{{ __('Toggle navigation') }}">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <span class="navbar-toggler-icon"></span>            </button>
+
+
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            @auth
+
+
+
                 <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('trabajo.create') }}">{{ __('Anunciar Trabajo') }} <i class="em em-speaking_head_in_silhouette"></i></a>
+                            <a class="nav-link" href="{{\Auth::guest() ? route('garden') : route('home') }}"><i class="fas fa-home"></i> {{ __('Inicio') }}</a>
                         </li>
+                        @auth
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="{{ route('trabajo.create') }}"><i class="fas fa-bullhorn"></i> {{ __('Anunciar Trabajo') }} </a>
+
+                        </li>
+                        @endauth
+
+
                     </ul>
-            @endauth
+
             <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
                     <!-- Authentication Links -->

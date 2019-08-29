@@ -44,7 +44,7 @@ Route::get('/contact/{trabajo}',[
     'uses' => 'ContactController@create',
     'as' => 'contact.create'
 ]);
-Route::post('/contact',[
+Route::post('/contact/{trabajo}',[
     'uses' => 'ContactController@store',
     'as' => 'contact.store'
 ]);
