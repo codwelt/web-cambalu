@@ -151,7 +151,7 @@
                                             <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" width="80%">
                                                 <tr>
                                                     <td style="color:#187272;">
-                                                        <b>Trabajo:</b> {{$titulo}}<br>
+                                                        <b>Trabajo:</b> {{$trabajo}}<br>
                                                         <b>Materia:</b> {{$materia}}<br>
                                                         <b>Fecha:</b> {{$fecha}}<br>
                                                         <b>WhatsApp:</b> {{$whatsapp}}<br>
