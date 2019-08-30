@@ -16,7 +16,8 @@
         "laracasts/flash": "^3.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
-        "laraveles/spanish": "^1.2"
+        "laraveles/spanish": "^1.2",
+        "luecano/numero-a-letras": "^1.2"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

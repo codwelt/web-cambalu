@@ -52,8 +52,12 @@
                             <div class="views">ID: {{$trabajo->getIdCrypt()}}
                             </div>
                             <div class="stats">
-                                <i class="far fa-eye "></i> {{rand(0,500)}}
-                                <i class="fab fa-whatsapp"></i> {{rand(0,15)}}
+                                @php
+                                    $radomView = rand(0,500);
+                                    $randomStats = rand(0,15);
+                                @endphp
+                                <i class="far fa-eye " data-container="body" data-toggle="popover" data-placement="right" data-content=" {{\NumeroALetras\NumeroALetras::convertir($radomView,"personas lo han visto.")}} "></i> {{$radomView}}
+                                <i class="fab fa-whatsapp" data-container="body" data-toggle="popover" data-placement="right" data-content="{{\NumeroALetras\NumeroALetras::convertir($radomView,"se han contacto con el autor.")}} "></i> {{$randomStats}}
                             </div>
                         </div>
                     </div>

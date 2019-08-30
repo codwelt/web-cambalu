@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "58276eddc5d81ecacf35844f5f5b4165",
+    "content-hash": "43b44b01bf3903a405b1a8918a3e0c9a",
     "packages": [
         {
             "name": "artesaos/seotools",
@@ -1364,6 +1364,52 @@
                 "storage"
             ],
             "time": "2019-08-24T11:17:19+00:00"
+        },
+        {
+            "name": "luecano/numero-a-letras",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/luecano/numero-a-letras.git",
+                "reference": "fd6663a83f293bedb1c938cb1f36bf9a67fd2ead"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/luecano/numero-a-letras/zipball/fd6663a83f293bedb1c938cb1f36bf9a67fd2ead",
+                "reference": "fd6663a83f293bedb1c938cb1f36bf9a67fd2ead",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5 || ^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "NumeroALetras\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luis Cano",
+                    "role": "Developer",
+                    "email": "luecano@gmail.com",
+                    "homepage": "https://github.com/luecano"
+                }
+            ],
+            "description": "Convierte un número a letras con formato de moneda para facturación electrónica.",
+            "homepage": "https://github.com/luecano/numero-a-letras",
+            "keywords": [
+                "convertir",
+                "facturacion",
+                "letras",
+                "numero",
+                "sunat"
+            ],
+            "time": "2018-12-09T23:10:24+00:00"
         },
         {
             "name": "monolog/monolog",
