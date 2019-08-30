@@ -13,6 +13,9 @@
     <div class="alert alert-warning " role="alert" id="alertGanaGana">
         <h4 class="alert-heading animated infinite bounce delay-2s slow ">Como Ganar Aqui! <i class="em em-moneybag"></i></h4>
         <p>
+            <b>¿Como Ganas?</b><br>
+            Diciendo que trabajos tienes, trabajos de la universidad hechos por tí que tienes guardados llenos de telarañas.<br>
+            <b>NO SUBIRAS LOS TRABAJOS</b> solo diras que trabajos tienes para otros estudiantes los y te contacten.<br></br>
             <b>¿Que Gano?</b><br>
             Lo dinero, otro trabajo, comida, una jartera por que tu...
             <a href="{{route('gana-gana')}}" >Mas Informacion</a>
