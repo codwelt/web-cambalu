@@ -57,7 +57,7 @@
                                     $randomStats = rand(0,15);
                                 @endphp
                                 <span data-container="body" data-toggle="popover" data-placement="right" data-content=" {{\NumerosEnLetras::convertir($radomView,"personas lo han visto.")}}"><i class="far fa-eye "></i> {{$radomView}}</span>
-                                <span data-container="body" data-toggle="popover" data-placement="right" data-content="{{\NumerosEnLetras::convertir($radomView,"se han contacto con el autor.")}}"><i class="fab fa-whatsapp" ></i> {{$randomStats}}</span>
+                                <span data-container="body" data-toggle="popover" data-placement="left" data-content="{{\NumerosEnLetras::convertir($randomStats,"se han contacto con el autor.")}}"><i class="fab fa-whatsapp" ></i> {{$randomStats}}</span>
                             </div>
                         </div>
                     </div>
