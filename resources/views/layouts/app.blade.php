@@ -275,7 +275,7 @@
     $('[data-toggle="tooltip"]').tooltip();
 
     //Enable popover
-    $('[data-toggle="popover"]').tooltip();
+    $('[data-toggle="popover"]').popover();
 
     $('.selectpicker').selectpicker();
 
