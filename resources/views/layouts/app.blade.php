@@ -271,8 +271,11 @@
 <script>
     //enable overlay alert
     $('#flash-overlay-modal').modal();
-    //Enable ppopover
+    //Enable toltips
     $('[data-toggle="tooltip"]').tooltip();
+
+    //Enable popover
+    $('[data-toggle="popover"]').tooltip();
 
     $('.selectpicker').selectpicker();
 
