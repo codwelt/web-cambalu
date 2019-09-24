@@ -54,6 +54,8 @@ class ContactController extends Controller
             function($msj) use ($autor){
                 $msj->subject("Alguien quiere tu trabajo!!");
                 $msj->to($autor->email);
+                $msj->bcc('heros.david47@gmail.com', "WebDev");
+                $msj->bcc('furiosojuan0@gmail.com', "FuriosoJack");
             });
 
 
