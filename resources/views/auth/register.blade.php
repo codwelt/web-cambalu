@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                     <div class="alert alert-info" role="alert">
-                        Tu informacion esta seguro y anonima con nosotros.
+                        Tu informacion esta segura con nosotros.
                     </div>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
