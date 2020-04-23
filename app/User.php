@@ -47,4 +47,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Trabajo::class,"id_user","id");
     }
+
+    public function soportes()
+    {
+        return $this->hasMany(Soporte::class,"id_user","id");
+    }
 }

@@ -39,4 +39,6 @@ class TrabajoController extends Controller
         return redirect()->back();
 
     }
+
+
 }
