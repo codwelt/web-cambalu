@@ -30,9 +30,24 @@ Route::get('/crear',[
     'as' => 'trabajo.create'
 ]);
 
+Route::get('/editar/{materia}',[
+    'uses' =>'Usuario\TrabajoController@edit',
+    'as' => 'trabajo.edit'
+]);
+
 Route::post('/store',[
     'uses' =>'Usuario\TrabajoController@store',
     'as' => 'trabajo.store'
+]);
+
+Route::post("/soporte",[
+    "uses" => 'Usuario\SoporteController@store',
+    "as" => 'soporte.store'
+]);
+
+Route::get("/soporte",[
+    "uses" => 'Usuario\SoporteController@create',
+    "as" => 'soporte.create'
 ]);
 
 Route::post('/materias',[

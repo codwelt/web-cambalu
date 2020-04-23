@@ -174,6 +174,13 @@
 
                         </li>
                         @endauth
+                        @auth
+                            <li class="nav-item">
+
+                                <a class="nav-link" href="{{ route('soporte.create') }}"><i class="fas fa-question-circle"></i> {{ __('Soporte Tecnico') }} </a>
+
+                            </li>
+                        @endauth
 
 
                     </ul>
