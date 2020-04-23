@@ -151,7 +151,7 @@
                                             <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" width="80%">
                                                 <tr>
                                                     <td style="color:#187272;">
-                                                        El usuario {{$nombreUsuario}} con email {{$emailUsuario}} pidio ayuda.
+                                                        El usuario {{$usuarioNombre}} con email {{$usuarioEmail}} pidio ayuda.
                                                         <br>
                                                         <b>Mensaje:</b>
                                                         <p>
