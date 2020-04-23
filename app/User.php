@@ -50,6 +50,6 @@ class User extends Authenticatable
 
     public function soportes()
     {
-        return $this->hasMany(Soporte::class,"id_user","id");
+        return $this->hasMany(Soporte::class,"user_id","id");
     }
 }
