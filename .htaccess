@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.cambalu.hol.es [NC]
+RewriteRule ^(.*)$ http://cambalu.hol.es/$1 [L,R=301]
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^cambalu\.hol\.es [OR]
+RewriteCond %{HTTP_HOST} ^www\.cambalu\.hol\.es
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule (.*) /public/$1 [L]
