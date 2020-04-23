@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffc107" />
     {!! SEOMeta::generate() !!}
     {!! OpenGraph::generate() !!}
     {!! Twitter::generate() !!}
@@ -164,7 +165,7 @@
                     <ul class="navbar-nav mr-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{{\Auth::guest() ? route('garden') : route('home') }}"><i class="fas fa-home"></i> {{ __('Inicio') }}</a>
+                            <a class="nav-link" href="{{\Auth::guest() ? route('garden') : route('home') }}">{{ __('Inicio') }}</a>
                         </li>
                         @auth
                         <li class="nav-item">
@@ -270,8 +271,11 @@
 <script>
     //enable overlay alert
     $('#flash-overlay-modal').modal();
-    //Enable ppopover
+    //Enable toltips
     $('[data-toggle="tooltip"]').tooltip();
+
+    //Enable popover
+    $('[data-toggle="popover"]').popover();
 
     $('.selectpicker').selectpicker();
 

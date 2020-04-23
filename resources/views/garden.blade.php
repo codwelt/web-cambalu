@@ -10,39 +10,23 @@
          logged_in_greeting="Hola, te puedo ayudar en algo?"
          logged_out_greeting="Hola, te puedo ayudar en algo?">
     </div>
-    <div class="alert alert-warning alert-dismissible fade show " role="alert" id="alertGanaGana">
+    <div class="alert alert-warning " role="alert" id="alertGanaGana">
         <h4 class="alert-heading animated infinite bounce delay-2s slow ">Como Ganar Aqui! <i class="em em-moneybag"></i></h4>
         <p>
             <b>¿Como Ganas?</b><br>
-
-            Anunciado los trabajos de la universidad hechos por ti.<br><br>
-
+            Diciendo que trabajos tienes, trabajos de la universidad hechos por tí que tienes guardados llenos de telarañas.
+            <b>NO SUBIRAS LOS TRABAJOS</b> solo diras titulo y descripcion para que otros estudiantes los vean y los vendas.<br></br>
             <b>¿Que Gano?</b><br>
-
-            Lo que tu pidas(dinero, otro trabajo, comida, una jartera, etc) ya que realmente tu le vas a hablar a la persona que quiere conseguir tu trabajo.<br>
-
-            <br><b>¿Como comienzo a anunciar?</b><br>
-            <ul>
-            <li><i class="em em-one"></i> Registrándote en la página  |    <a href="{{route("register")}}" ><small>Registrarse ya!</small></a></li>
-            <li><i class="em em-two"></i> Anunciar los trabajos que tienes</li>
-            <li><i class="em em-three"></i> Estar atento a tu whatsApp por que te enviaremos por whatsapp la siguiente información cuando alguien quiera algún trabajo</li>
-
-
-        </ul>
-
-
-
-
-
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
+            Lo dinero, otro trabajo, comida, una jartera por que tu...
+            <a href="{{route('gana-gana')}}" >Mas Informacion</a>
+        </p>
     </div>
 
     <div class="alert alert-success alert-dismissible fade show" role="alert">
         <h4 class="alert-heading">Como consigues el trabajo que necesitas!</h4>
-        <p>Te contactas.<i class="em em-calling"></i></p>
-        <p>El autor te escribira por WhatsApp y llegas a un acuerdo con él de manera privada para obtener el trabajo. <i class="em em-sunglasses"></i></p>
+        <p>1) Buscas el trabajo en el directorio.</p>
+        <p>2) Te contactas.<i class="em em-calling"></i></p>
+        <p>3) El autor te escribira por WhatsApp y llegas a un acuerdo con él de manera privada para obtener el trabajo. <i class="em em-sunglasses"></i></p>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -68,8 +52,12 @@
                             <div class="views">ID: {{$trabajo->getIdCrypt()}}
                             </div>
                             <div class="stats">
-                                <i class="far fa-eye "></i> {{rand(0,500)}}
-                                <i class="fab fa-whatsapp"></i> {{rand(0,15)}}
+                                @php
+                                    $radomView = rand(0,500);
+                                    $randomStats = rand(0,15);
+                                @endphp
+                                <span data-container="body" data-toggle="tooltip" data-placement="top" title=" {{\NumerosEnLetras::convertir($radomView,"personas lo han visto.")}}"><i class="far fa-eye "></i> {{$radomView}}</span>
+                                <span data-container="body" data-toggle="tooltip" data-placement="bottom" title="{{\NumerosEnLetras::convertir($randomStats,"se han contacto con el autor.")}}"><i class="fab fa-whatsapp" ></i> {{$randomStats}}</span>
                             </div>
                         </div>
                     </div>
